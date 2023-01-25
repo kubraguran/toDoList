@@ -16,7 +16,6 @@ bool completed;
 
 public:
 ToDoItem(): id(0), description(""), completed(false) {};
-~ToDoItem() = default; //destructor
  bool create(std:: string new_description) {
     id = rand() % 100 + 1; 
     description = new_description;
